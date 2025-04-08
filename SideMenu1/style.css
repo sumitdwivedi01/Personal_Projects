@@ -43,9 +43,7 @@ input[type="checkbox"]{
     border-radius: 4px;
     transition:all 0.5s ease;
 }
-#btn:checked ~ .menu-btn i:before{
 
-}
 #btn:checked ~ .menu-btn{
 #img{
     left: 280px;
