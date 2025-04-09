@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="title">
+                <h1>Todo App</h1>
+                <small>Keep it up!</small>
+                <div class="progressbar" id="progressbar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <div class="circularStats">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+        <form action="">
+            <input type="text" placeholder="Write your task" id="taskinput">
+            <button type="submit" class="Add" id="newTask">+</button>
+        </form>
+        <ul id="task-list">
+            <!-- <li>
+                <input type="checkbox " name="checkbox" id="checkbox">
+                <p class="taskname ${task.completed ? "completed" : ""}">first task</p>
+                <img src="./updatelogo.svg" alt="" class="update" onclick="editList(${index})">
+                <img src="./deletelogo.svg" alt="" class="delete" onclick="deleteTask(${index})">
+            </li> -->
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
