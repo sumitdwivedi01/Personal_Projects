@@ -87,7 +87,7 @@ form{
     color: var(--text);
 
 }
-form button{
+.form button{
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -102,14 +102,19 @@ form button{
     cursor: pointer;
     outline: none;
 }
-ul li img{
+#task-list li img{
     width: 25px;
     display: flex;
     flex-direction: row;
     cursor: pointer;
-
 }
-ul li{
+.completed-list li img{
+    width: 25px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+#task-list li{
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -119,21 +124,70 @@ ul li{
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 20px;
+    transition: all ease 0.3s;
 }
-ul li input{
+#task-list li input{
     width: 15px;
     height: 15px;
     cursor: pointer;
 }
-ul{
+#task-list{
     list-style: none;
     width: 100%;
     margin-top: 40px;
 }
-ul li p{
+#task-list li p{
+    flex: 1;
+}
+.completed-list li{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--purple);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+}
+.completed-list li input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.completed-list{
+    list-style: none;
+    width: 100%;
+    margin-top: 40px;
+}
+.completed-list li p{
     flex: 1;
 }
 .completed{
     text-decoration: line-through;
     color: var(--teal);
+}
+.separation{
+    margin-top: 40px;
+    align-self: flex-start;
+    font-size: 20px;
+    background-color: var(--secondaryBackground);
+    border: 2px solid var(--purple);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.separation:active{
+    background-color: #0f1232 ;
+    color:#49e1d5;
+}
+.separation img{
+    width: 20px;
 }
