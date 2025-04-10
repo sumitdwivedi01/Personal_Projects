@@ -49,7 +49,7 @@ body{
     background-color: var(--teal);
     border-radius: 5px;
     width: 0%;
-    transform: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
 .circularStats{
     width: 100px;

@@ -1,4 +1,15 @@
+document.addEventListener("DOMContentLoaded", (listner=>{
+  const storedTasks=JSON.parse(localStorage.getItem(`tasks`))
+  if(storedTasks){
+   storedTasks.forEach((task)=>tasks.push((task)))
+   updateTaskList();
+   updateStats();
+  }
+}))
 let tasks=[];
+const saveTasks=()=>{
+  localStorage.setItem(`tasks`, JSON.stringify(tasks))
+}
 
 const addTask=()=>{
     let taskInput=document.getElementById("taskinput");
@@ -8,6 +19,7 @@ const addTask=()=>{
         taskInput.value=``;
         updateTaskList();
         updateStats();
+        saveTasks();
         console.log(tasks);
     }
 }
@@ -15,6 +27,7 @@ const toggleTaskComplete = (index)=>{
     tasks[index].completed=!tasks[index].completed;//if checkbox got toggeled it will convert the object completed to true from false and false from true
     //true<->false
     updateTaskList();
+    saveTasks();
     updateStats();
 }
 const editList=(index)=>{
@@ -23,11 +36,13 @@ const editList=(index)=>{
     tasks.splice(index ,1);
     updateTaskList();
     updateStats();
+    saveTasks();
 }
 const deleteTask=(index)=>{
     tasks.splice(index,1);
     updateTaskList();
     updateStats();
+    saveTasks();
 }
 const updateStats=()=>{
     const completedTasks= tasks.filter(task=>task.completed).length
