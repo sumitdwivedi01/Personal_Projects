@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital Alarm clock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio src="alarmsound.wav" id="audio"  loop></audio>
+    <div class="container" id="container">
+        <div class="clock">
+            <div class="top">
+                <span class="date">Date:<span id="date">date - </span>
+                <span id="month"> month - </span>
+                <span id="year"> year</span></span>
+                
+                <span class="day">Day: <span id="day">day</span></span>
+               
+            </div>
+            <div id="time">00:00:00</div>
+        </div>
+        <div class="Alarm" id ="Alarm">
+            <span>Hours</span>
+            <input type="number" max="23" min="0" value="00" placeholder="Hours" id="hours" script="padstart(2 ,`0)">
+            <span>Minutes</span>
+            <input type="number" max="59" min="0"placeholder="Minutes" value="00" id="minutes">
+            <span>Seconds</span>
+            <input type="number" max="59" min="0" placeholder="Seconds"  value="00" id="seconds">
+        </div>
+        <div class="buttons" id="buttons">
+            <div class="setAlarm">
+                <button id="setAlarm" >Set Alarm</button>
+            </div>
+            <!-- <div class="stop_btn">
+                <button id="stop_Alarm">Stop Alarm</button>
+            </div> -->
+
+        </div>
+            <!-- <div class="upcomingAlarm">
+                <span>Upcoming Alarm: 00:00:00</span>
+                <button id="deleteAlarm">Delete Alarm</button>
+            </div> -->
+    </div>
+    <script src="./script.js" ></script>
+</body>
+</html>
