@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 48 48"
+     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- semi‑opaque pale‑gold circle matching your music‑note icon -->
+  <circle cx="24" cy="24" r="24" fill="#5A5A5A" fill-opacity="0.85"/>
+  <!-- white play triangle -->
+  <polygon points="20,16 32,24 20,32" fill="#FFFFFF"/>
+</svg>
