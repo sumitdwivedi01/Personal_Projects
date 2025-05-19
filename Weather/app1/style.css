@@ -1,0 +1,35 @@
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+    top: 35vh;
+    border-radius: 30px;
+}
+#city{
+    border-color: black;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.search{
+    background-color: rgb(233, 201, 233);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.weatherinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
